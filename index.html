@@ -1,0 +1,256 @@
+<!--внимательно изучите комментарии-->
+<!--создайте библиотеку классов style-->
+<style>
+  .menu {
+    width: 100%;
+    height: 70px;
+    background-color: none;
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+  }
+  .logo-block {
+    width: 260px;
+    height: 75px;
+    background-color: none;
+    border-right: 1px solid lightgrey;
+    text-align: center
+  }
+  .logo-img {
+    width: 250px;
+    height: 70px;
+  }
+  .links-block {
+    margin-left: 10px;
+    height: 70px;
+    width: 200px;
+    display: flex;
+    padding-top: 20px
+  }
+  .link-img {
+    height: 30px;
+    width: 30px;
+    vertical-align: middle
+  }
+  .link {
+    text-decoration: none;
+    font-family: "Arial";
+    color: black;
+    font-weight: 700;
+    vertical-align: middle
+  }
+  .cafe-block {
+    background-color: #F6F6F6;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .center-cafe {
+    width: 1600px;
+    height: 330px;
+    background-color: none;
+    margin: 0 auto;
+    display: flex;
+    
+  }
+  .cafe-item {
+    width: 385px;
+    height: 330px;
+    margin-left: 15px;
+    background-color: white;
+    border-radius: 10px;
+    
+
+  }
+  .cafe-img {
+    width: 100%;
+    height: 310px;
+    border-radius: 10px;
+    height: 200px;
+  
+  }
+  .cafe-timer {
+    background-color: #F6F6F6;
+    border-radius: 10px;
+    width: 90px;
+    height: 20px;
+    color: #32c24a;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 5px;
+    font-family: 'Arial';
+    margin-left: 10px;
+  }
+  .cafe-text {
+    font-weight: 700;
+    font-family: 'Arial';
+    margin-left: 10px
+  }
+  .main-banner{
+    background-image: url(images.png);
+    padding-top: 10px;
+    height: 600px;
+  }
+  .title-block{
+    width: 500px;
+    margin-top: 150px;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 200px;
+    height: 200px;
+    padding-top: 25px;
+    padding-bottom: 5px;
+  }
+  .title-block1{
+    width: 500px;
+    margin-top: 150px;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 200px;
+    height: 200px;
+    padding-top: 60px;
+  }
+  .title{
+    text-align: center;
+    font-size: 50px;
+    font-family: Arial;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .middle-banner{
+    background-image: url(banner.png);
+    padding-top: 10px;
+    height: 600px;
+    background-size: 100% 100%;
+  }
+</style>
+<!--Задание 1. Открой папку 1 и  картинку template.png
+				1.1 добавь класс для дива на всю ширину, назови класс menu. Задай высоту и свойство border-bottom, чтобы появилось только нижнее подчёркивание со цветом lightgrey. 
+
+				1.2 посмотрите на картинку 1_1.png, поставь два дива рядом. Для чего они? Для дива логотипа класс - logo-block (width:250px), для дива ссылок класс - links-block. 
+
+				Какое свойство надо дополнительно добавить в класс menu, чтобы дивы встали рядом? 
+
+				1.4.Поставь элементы логотип компании, иконку point и ссылку 	
+				
+				1.5 Добавь класс logo-img для логотипа, класс link-img для иконки point  и класс link для ссылки, стилизуй как на картинке template.png.
+
+				Чтобы link-img и link стояли на среднем уровне добавь свойство для link-img: vertical-align:middle.
+				
+				1.6 Для logo-block добавь: border-right, чтобы появилась граница только справа. И отцентруй картинку (text-align:center), и внутренний верхний отступ.			
+-->
+
+<!--Меню-->
+<div class="menu">
+	<div class="logo-block">
+		<img src="logo.png" class="logo-img">
+	</div>
+	<div class="links-block">
+		<img src="point.png" class="link-img">
+		<a href="" class="link">Адрес доставки</a>		
+	</div>	
+</div>
+
+
+<!--Задание 2. Открой папку 2 и картинку template.png. 
+				2.1 Посмотри на картинку 1.png, добавь ему класс main-banner и свойства.
+				Картинка стоит фоном у него. 
+
+				2.2. Посмотрите на картинку 2.png, добавье класс для дива title-block, ширина блока 500px. 
+
+				2.3 Для заголовка добавь класс title и нужные свойства. Вспомни, как поставить по центру текст. Размер текста 50px;		
+
+				2.5. Чтобы блок title-block стоял с отступом от дива-родителя. Добавь диву-родителю (main-banner) внутренний верхний отступ padding-top. 
+
+				2.6. Для title-block убери высоту, чтобы она подстраивалась под содержимое и добавь внутренние отступы снизу и сверху по 5px;
+
+				Эти классы обязательно используйте повторно внизу. 
+-->
+<!--ГЛАВНЫЙ БАННЕР-->
+<div class="main-banner">
+	<div class="title-block">
+		<h1 class="title">Редкие животные на рюкзаках Delivery Club</h1>	
+	</div>
+</div>
+
+<!--Задание 3. Папка 3 и template.png. Блок с любимыми доставками из твоего города. 
+				3.1 Посмотри на картинку 1.png. Надо поставить див-родитель серого цвета (#F6F6F6). Назови класс cafe-block. Не ставь высоту, пусть див подстроится под содержимое. Лучше добавь внутренние нижние и верхние отступы по 50px.
+
+				3.2 Картинка 2.png, надо поставить див по центру.  Назовите класс center-cafe, ширина на большом экране будет 1600px. Можешь подстроить ширину под свой монитор. И добавь display:flex, чтобы дивы внутри него встали в строку.
+
+				3.3 Картинка 3.png, теперь надо поставить 4 одинаковых дива. Создайте класс cafe-item и добавь каждому диву.
+				
+				3.4. Скачайте картинки любимых кафе города и поставьте их. А также, название и примерное время доставки. 
+
+				3.5 Добавь классы для картинок cafe-img, для текста text, для времени cafe-timer. Стилизуй их смотря на template.png
+-->
+<!--Кафе-->
+<div class="cafe-block">
+	<div class="center-cafe">
+		<div class="cafe-item">
+			<img src="https://www.sostav.ru/images/news/2019/12/05/8k0hdue6_md.jpg" alt="" class="cafe-img">
+			<p class="cafe-text">Додо Пицца</p>
+			<div class="cafe-timer">20-30 мин</div>
+		</div>
+		<div class="cafe-item">
+			<img src="https://pizza.ykt.ru/upload/resize_cache/iblock/efa/430_443_1/efa42123d8f7e17e1b9b792235fd3e38.jpg" alt="" class="cafe-img">
+			<p class="cafe-text">City Pizza</p>
+			<div class="cafe-timer">25-35 мин</div>
+		</div>
+		<div class="cafe-item">
+			<img src="https://img02.rl0.ru/afisha/o/www.afisha.ru/uploads/images/d/6a/d6a450c558c34b5492fa3671de6d3e3d.jpg" alt="" class="cafe-img">
+			
+			<p class="cafe-text">Subway</p>
+			<div class="cafe-timer">35-45 мин</div>
+		</div>
+		<div class="cafe-item">
+			<img src="https://bigbossykt.ru/wp-content/uploads/2020/05/kombo-chiken.png" alt=""  class="cafe-img">
+			<p class="cafe-text">Big Boss</p>
+			<div class="cafe-timer">45-60 мин</div>
+			
+		</div>
+	</div>
+</div>
+
+
+<!--Задание 4. Папка 4 и template.png
+				4.1 Здесь все просто, добавьте диву с фоном класс middle-banner. 
+				4.2 Свойства дива для заголовка такие же, как и у дива в main-banner. Надо  ли тогда, создавать новый класс?
+				4.3. Свойства заголовка h1, тоже такие, как в main-banner. Надо ли тогда задавать новые классы?
+-->
+<!--СРЕДНИЙ БАННЕР-->
+<div class="middle-banner">
+	<div class="title-block1">
+		<h1 class="title">Спасём природу вместе!</h1>
+	</div>	
+</div>
+
+
+<!--Задание 5. Полностью похож на Задание 3. Только вставьте такие доставки, которых нет в твоём городе и ты бы хотел их видеть. Например ,mcdonalds или dunkin donuts.
+
+	Выполните по аналогии, используя классы из задания 3.-->
+<!--ТОВАРЫ-->
+<div class="cafe-block">
+	<div class="center-cafe">
+		<div class="cafe-item">
+			<img src="https://www.foodbusinessnews.net/ext/resources/2020/4/DominosOrder_Lead.jpg?1587732170" alt="" class="cafe-img">
+			<p class="cafe-text">Domino's</p>
+			<div class="cafe-timer">20-30 мин</div>
+		</div>
+		<div class="cafe-item">
+			<img src="https://geekville.ru/wp-content/uploads/2020/08/McDonalds.jpg" alt="" class="cafe-img">
+			<p class="cafe-text">McDonald's</p>
+			<div class="cafe-timer">25-35 мин</div>
+		</div>
+		<div class="cafe-item">
+			<img src="https://stmegi.com/upload/iblock/12a/12ad42623decdcb84af9fce129c348a4.jpg" alt="" class="cafe-img">
+			
+			<p class="cafe-text">Dunkin Donuts</p>
+			<div class="cafe-timer">35-45 мин</div>
+		</div>
+		<div class="cafe-item">
+			<img src="https://www.horeca-magazine.ru/kernel/files/images/db/articles/861/noshow-review.jpg" class="cafe-img">
+			<p class="cafe-text">Pizza Hut</p>
+			<div class="cafe-timer">45-60 мин</div>
+			
+		</div>
+	</div>
+</div>
